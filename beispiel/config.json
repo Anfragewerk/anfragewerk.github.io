@@ -18,5 +18,5 @@
     "WhatsApp",
     "Kontaktformular"
   ],
-  "apiBaseUrl": "https://api.deinedomain.de"
+  "apiBaseUrl": "https://anfragewerk-api.anfragewerk.workers.dev"
 }
