@@ -1,0 +1,11 @@
+name = "anfragewerk-api"
+main = "src/index.js"
+compatibility_date = "2026-04-22"
+
+[observability.logs]
+enabled = true
+
+[vars]
+OPENAI_MODEL = "gpt-5.4"
+FRONTEND_BASE_URL = "https://<github-user>.github.io/<repo-name>"
+ALLOWED_ORIGINS = "https://<github-user>.github.io,https://app.deinedomain.de"

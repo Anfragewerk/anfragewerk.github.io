@@ -1,0 +1,11 @@
+{
+  "heroTitle": "So arbeitet AnfrageWerk in der Praxis",
+  "heroText": "Füge eine Anfrage ein oder lade das Beispiel. AnfrageWerk erzeugt daraus eine passende Kundenantwort, sinnvolle Rückfragen und eine saubere Angebotsbasis – direkt im Browser.",
+  "submitLabel": "Antwort live erstellen",
+  "resetLabel": "Eingabe leeren",
+  "exampleLabel": "Beispielanfrage laden",
+  "copyLabel": "Antwort kopieren",
+  "knowledgeTitle": "Hinterlegtes Betriebswissen",
+  "outputTitle": "Generierte Ausgabe",
+  "privacyHint": "Bitte in der Demo keine sensiblen personenbezogenen Daten eingeben."
+}

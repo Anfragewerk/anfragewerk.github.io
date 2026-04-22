@@ -1,0 +1,31 @@
+{
+  "services": [
+    "Maßmöbel",
+    "Einbauschränke",
+    "Innenausbau",
+    "Küchenanpassungen"
+  ],
+  "styleRules": [
+    "freundlich",
+    "klar",
+    "hochwertig",
+    "kein übertriebener Werbeton"
+  ],
+  "businessRules": [
+    "Keine verbindlichen Preise ohne Maße und Prüfung",
+    "Altbau immer gesondert berücksichtigen",
+    "Keine festen Termine ohne Rücksprache"
+  ],
+  "noGos": [
+    "keine Preiszusage aus der Ferne",
+    "keine unrealistischen Zeitversprechen",
+    "keine pauschalen Materialzusagen"
+  ],
+  "qualificationPoints": [
+    "ungefähre Maße",
+    "Materialwunsch",
+    "Fotos vorhanden",
+    "Projektort",
+    "gewünschter Zeitrahmen"
+  ]
+}

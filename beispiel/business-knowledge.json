@@ -1,0 +1,31 @@
+{
+  "services": [
+    "Maßanfertigungen",
+    "Innenausbau",
+    "Küchenanpassungen",
+    "Reparatur kleinerer Holzelemente"
+  ],
+  "styleRules": [
+    "freundlich",
+    "klar",
+    "strukturiert",
+    "nicht zu werblich"
+  ],
+  "businessRules": [
+    "Keine verbindlichen Preise ohne genauere Prüfung",
+    "Terminversprechen nur vorsichtig formulieren",
+    "Bei unklarer Einbausituation immer Rückfragen stellen"
+  ],
+  "noGos": [
+    "keine unrealistischen Zusagen",
+    "keine Preiszusage aus der Ferne",
+    "keine unnötigen Fachbegriffe"
+  ],
+  "qualificationPoints": [
+    "ungefähre Maße",
+    "Materialwunsch",
+    "Fotos vorhanden",
+    "Projektort",
+    "gewünschter Zeitrahmen"
+  ]
+}

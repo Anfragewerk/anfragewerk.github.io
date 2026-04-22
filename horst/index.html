@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal – AnfrageWerk</title>
+  <link rel="stylesheet" href="../assets/css/portal.css" />
+</head>
+<body>
+  <header class="portal-header">
+    <div class="container portal-topbar">
+      <div class="portal-brand">
+        <div class="logo-badge">HA</div>
+        <div>
+          <h1 id="systemName">System</h1>
+          <p id="tagline">Lade Daten …</p>
+        </div>
+      </div>
+      <div class="portal-status">
+        <span class="status-pill" id="businessName">Betrieb</span>
+        <span class="status-pill" id="regionPill">Region</span>
+        <a class="status-pill" href="../">Zur Landingpage</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrap">
+    <div class="container">
+      <section class="hero-card">
+        <h2 id="portalTitle">Portal lädt …</h2>
+        <p id="portalText">Bitte warten.</p>
+      </section>
+
+      <div class="layout-grid">
+        <section class="panel">
+          <div class="panel-head">
+            <h3>Anfrage eingeben</h3>
+            <p id="privacyHint">Bitte keine sensiblen Daten eingeben.</p>
+          </div>
+          <div class="panel-body">
+            <form id="portalForm">
+              <div class="grid-2">
+                <div class="field">
+                  <div class="label-row"><label for="inquiryType">Anfragetyp</label></div>
+                  <select id="inquiryType" required></select>
+                </div>
+                <div class="field">
+                  <div class="label-row"><label for="contactChannel">Kontaktweg</label></div>
+                  <select id="contactChannel" required></select>
+                </div>
+              </div>
+
+              <div class="grid-2">
+                <div class="field">
+                  <div class="label-row"><label for="urgency">Dringlichkeit</label></div>
+                  <select id="urgency">
+                    <option>Normal</option>
+                    <option>Schnell</option>
+                    <option>Sehr dringend</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <div class="label-row"><label for="tone">Ton</label></div>
+                  <select id="tone">
+                    <option>Freundlich & professionell</option>
+                    <option>Etwas persönlicher</option>
+                    <option>Kurz & sachlich</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="label-row"><label for="outputGoal">Ziel des Outputs</label></div>
+                <select id="outputGoal">
+                  <option>Antwort + Rückfragen + Angebotsbasis</option>
+                  <option>Nur Antwort</option>
+                  <option>Nur Rückfragen</option>
+                  <option>Nur interne Angebotsbasis</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <div class="label-row"><label for="customerInquiry">Kundenanfrage</label></div>
+                <textarea id="customerInquiry" required placeholder="Hier die Anfrage einfügen …"></textarea>
+              </div>
+
+              <div class="grid-2">
+                <div class="field">
+                  <div class="label-row"><label for="projectLocation">Projektort</label></div>
+                  <input id="projectLocation" type="text" placeholder="z. B. Nürnberg, Fürth, Erlangen" />
+                </div>
+                <div class="field">
+                  <div class="label-row"><label for="desiredTimeline">Terminwunsch</label></div>
+                  <input id="desiredTimeline" type="text" placeholder="z. B. möglichst im Mai" />
+                </div>
+              </div>
+
+              <div class="grid-2">
+                <div class="field">
+                  <div class="label-row"><label for="photosAvailable">Fotos vorhanden</label></div>
+                  <select id="photosAvailable">
+                    <option>Unbekannt</option>
+                    <option>Ja</option>
+                    <option>Nein</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <div class="label-row"><label for="internalNote">Interner Hinweis</label></div>
+                  <input id="internalNote" type="text" placeholder="optional für Büro oder Inhaber" />
+                </div>
+              </div>
+
+              <div class="actions">
+                <button id="submitBtn" class="btn btn-primary" type="submit">Antwort erstellen</button>
+                <button id="exampleBtn" class="btn btn-secondary" type="button">Beispiel laden</button>
+                <button id="resetBtn" class="btn btn-ghost" type="button">Eingabe leeren</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <aside class="panel">
+          <div class="panel-head">
+            <h3 id="knowledgeTitle">Betriebswissen</h3>
+            <p>Sichtbare, unkritische Portal-Daten für diese Phase.</p>
+          </div>
+          <div class="panel-body">
+            <div class="info-list">
+              <div class="info-block">
+                <h4>Leistungen</h4>
+                <ul id="servicesList"></ul>
+              </div>
+              <div class="info-block">
+                <h4>Sprachstil</h4>
+                <ul id="styleRulesList"></ul>
+              </div>
+              <div class="info-block">
+                <h4>Wichtige Regeln</h4>
+                <ul id="businessRulesList"></ul>
+              </div>
+              <div class="info-block">
+                <h4>No-Gos</h4>
+                <ul id="noGosList"></ul>
+              </div>
+              <div class="info-block">
+                <h4>Qualifizierung</h4>
+                <ul id="qualificationList"></ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <section id="loadingCard" class="output-card hidden">
+        <div class="output-top">
+          <div>
+            <h3>Antwort wird erstellt …</h3>
+            <p>Die Anfrage wird gerade mit dem Betriebswissen kombiniert und verarbeitet.</p>
+          </div>
+        </div>
+        <div class="output-body">
+          <div class="loading-shell">
+            <div class="loading-bar"></div>
+            <div class="loading-bar short"></div>
+            <div class="loading-bar"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resultCard" class="output-card hidden">
+        <div class="output-top">
+          <div>
+            <h3 id="outputTitle">System-Ausgabe</h3>
+            <p>Hier erscheint die echte Antwortgenerierung aus deinem Portal-Backend.</p>
+          </div>
+          <div class="output-actions">
+            <button id="copyReplyBtn" class="btn btn-primary" type="button">Antwort kopieren</button>
+            <button id="copyAllBtn" class="btn btn-secondary" type="button">Alles kopieren</button>
+          </div>
+        </div>
+        <div class="output-body output-stack">
+          <div class="result-block">
+            <div class="result-head">
+              <h4>Antwort an den Kunden</h4>
+              <button id="copyReplyInlineBtn" class="mini-copy" type="button">Kopieren</button>
+            </div>
+            <div id="customerReplyOutput" class="result-content prose-box"></div>
+          </div>
+
+          <div class="result-block">
+            <div class="result-head">
+              <h4>Sinnvolle Rückfragen</h4>
+              <button id="copyQuestionsBtn" class="mini-copy" type="button">Kopieren</button>
+            </div>
+            <ul id="followUpQuestionsOutput" class="result-list"></ul>
+          </div>
+
+          <div class="result-block">
+            <div class="result-head">
+              <h4>Interne Angebotsbasis</h4>
+              <button id="copyQuoteBtn" class="mini-copy" type="button">Kopieren</button>
+            </div>
+            <ul id="quoteBaseOutput" class="result-list"></ul>
+          </div>
+
+          <div class="result-block">
+            <div class="result-head">
+              <h4>Nächster Schritt</h4>
+            </div>
+            <div id="nextStepOutput" class="result-content"></div>
+          </div>
+
+          <div class="meta-grid">
+            <div class="meta-card"><strong>Anfragetyp</strong><p id="metaType">–</p></div>
+            <div class="meta-card"><strong>Output-Ziel</strong><p id="metaGoal">–</p></div>
+            <div class="meta-card"><strong>Kontext</strong><p id="metaContext">–</p></div>
+          </div>
+          <div class="footer-mini">Phase 1.5: GitHub Pages vorne, echte Generierung über einen kleinen Backend-Layer.</div>
+        </div>
+      </section>
+
+      <section id="errorCard" class="output-card hidden error-card">
+        <div class="output-top">
+          <div>
+            <h3>Generierung fehlgeschlagen</h3>
+            <p id="errorMessage">Bitte Worker-Konfiguration und API-Verbindung prüfen.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="copyToast" class="copy-toast">In die Zwischenablage kopiert.</div>
+  <script type="module" src="../assets/js/portal.js"></script>
+</body>
+</html>

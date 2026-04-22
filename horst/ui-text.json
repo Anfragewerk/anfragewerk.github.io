@@ -1,0 +1,11 @@
+{
+  "heroTitle": "Neue Kundenanfrage verarbeiten",
+  "heroText": "Hier wird die Anfrage eingegeben. Das System erzeugt eine Kundenantwort, sinnvolle Rückfragen und eine interne Angebotsbasis.",
+  "submitLabel": "Arbeits-Prompt erzeugen",
+  "resetLabel": "Eingabe leeren",
+  "exampleLabel": "Beispiel laden",
+  "copyLabel": "Prompt kopieren",
+  "knowledgeTitle": "Betriebswissen",
+  "outputTitle": "Generierte Ausgabe",
+  "privacyHint": "Bitte keine sensiblen personenbezogenen Daten eingeben."
+}

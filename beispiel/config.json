@@ -1,0 +1,22 @@
+{
+  "systemName": "AnfrageWerk Demo",
+  "businessName": "Demo-Betrieb Innenausbau",
+  "tagline": "Live-Demo für schnellere Antworten, bessere Rückfragen und eine sauberere Angebotsvorbereitung.",
+  "region": "Metropolregion Nürnberg",
+  "primaryColor": "#244e3d",
+  "secondaryColor": "#5a8a78",
+  "inquiryTypes": [
+    "Allgemeine Anfrage",
+    "Maßanfertigung",
+    "Innenausbau",
+    "Reparatur / Nachbesserung",
+    "Küchenanpassung"
+  ],
+  "contactChannels": [
+    "E-Mail",
+    "Telefonnotiz",
+    "WhatsApp",
+    "Kontaktformular"
+  ],
+  "apiBaseUrl": "https://api.deinedomain.de"
+}

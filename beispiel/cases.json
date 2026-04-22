@@ -1,0 +1,17 @@
+{
+  "examples": [
+    {
+      "title": "Einbauschrank Altbau",
+      "type": "Maßanfertigung",
+      "contactChannel": "E-Mail",
+      "urgency": "Normal",
+      "tone": "Freundlich & professionell",
+      "goal": "Antwort + Rückfragen + Angebotsbasis",
+      "projectLocation": "Nürnberg",
+      "desiredTimeline": "innerhalb der nächsten 6 Wochen",
+      "photosAvailable": "Ja",
+      "internalNote": "Altbauwand vermutlich uneben",
+      "inquiry": "Guten Tag, wir möchten für unser Esszimmer einen maßgefertigten Einbauschrank anfertigen lassen. Die Wand ist ca. 3,10 m breit, Altbau, teilweise leicht uneben. Wir wünschen uns viel Stauraum, eher helles Holz oder weiß, möglichst schlicht. Können Sie uns sagen, ob so etwas machbar ist und mit welchem zeitlichen Rahmen wir ungefähr rechnen müssten?"
+    }
+  ]
+}
