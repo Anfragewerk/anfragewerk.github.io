@@ -27,8 +27,10 @@ function renderHeader() {
   $('regionPill').textContent = state.config.region;
   $('portalTitle').textContent = state.uiText.heroTitle;
   $('portalText').textContent = state.uiText.heroText;
+
   const logoBadge = document.querySelector('.logo-badge');
   if (logoBadge) logoBadge.textContent = (state.config.systemName || 'AW').slice(0, 2).toUpperCase();
+
   $('privacyHint').textContent = state.uiText.privacyHint;
   $('knowledgeTitle').textContent = state.uiText.knowledgeTitle;
   $('outputTitle').textContent = state.uiText.outputTitle;
@@ -64,9 +66,9 @@ function renderKnowledge() {
 function loadExample(index = 0) {
   const example = state.cases.examples[index];
   if (!example) return;
+
   $('inquiryType').value = example.type || state.config.inquiryTypes[0];
-  $('customerInquiry').value = example.inquiry;
-  $('outputGoal').value = example.goal || 'Antwort + Rückfragen + Angebotsbasis';
+  $('customerInquiry').value = example.inquiry || '';
   $('contactChannel').value = example.contactChannel || state.config.contactChannels[0];
   $('urgency').value = example.urgency || 'Normal';
   $('tone').value = example.tone || 'Freundlich & professionell';
@@ -81,7 +83,6 @@ function getFormData() {
     inquiryType: $('inquiryType').value,
     contactChannel: $('contactChannel').value,
     urgency: $('urgency').value,
-    outputGoal: $('outputGoal').value,
     tone: $('tone').value,
     customerInquiry: $('customerInquiry').value,
     projectLocation: $('projectLocation').value,
@@ -92,9 +93,12 @@ function getFormData() {
 }
 
 function renderMeta(formData) {
-  $('metaType').textContent = formData.inquiryType;
-  $('metaGoal').textContent = formData.outputGoal;
-  $('metaContext').textContent = `${formData.contactChannel} · ${formData.urgency}`;
+  $('metaType').textContent = formData.inquiryType || '–';
+  $('metaContext').textContent = [
+    formData.contactChannel,
+    formData.urgency,
+    formData.projectLocation || 'Ort offen'
+  ].filter(Boolean).join(' · ');
 }
 
 function showLoading() {
@@ -119,10 +123,16 @@ function formatParagraphs(text = '') {
 
 function renderResult(data, formData) {
   state.lastResult = data;
+
   $('customerReplyOutput').innerHTML = `<p>${formatParagraphs(data.customerReply)}</p>`;
-  $('followUpQuestionsOutput').innerHTML = data.followUpQuestions.map(item => `<li>${escapeHtml(item)}</li>`).join('');
-  $('quoteBaseOutput').innerHTML = data.quoteBase.map(item => `<li>${escapeHtml(item)}</li>`).join('');
-  $('nextStepOutput').textContent = data.nextStep;
+  $('followUpQuestionsOutput').innerHTML = (data.followUpQuestions || [])
+    .map(item => `<li>${escapeHtml(item)}</li>`)
+    .join('');
+  $('quoteBaseOutput').innerHTML = (data.quoteBase || [])
+    .map(item => `<li>${escapeHtml(item)}</li>`)
+    .join('');
+  $('nextStepOutput').textContent = data.nextStep || '–';
+
   renderMeta(formData);
   hideLoading();
   $('errorCard').classList.add('hidden');
@@ -131,21 +141,26 @@ function renderResult(data, formData) {
 
 function buildCopyText(type = 'all') {
   if (!state.lastResult) return '';
-  if (type === 'reply') return state.lastResult.customerReply;
-  if (type === 'questions') return state.lastResult.followUpQuestions.map((q, i) => `${i + 1}. ${q}`).join('\n');
-  if (type === 'quote') return state.lastResult.quoteBase.map(item => `- ${item}`).join('\n');
+
+  if (type === 'reply') return state.lastResult.customerReply || '';
+  if (type === 'questions') {
+    return (state.lastResult.followUpQuestions || []).map((q, i) => `${i + 1}. ${q}`).join('\n');
+  }
+  if (type === 'quote') {
+    return (state.lastResult.quoteBase || []).map(item => `- ${item}`).join('\n');
+  }
 
   return [
     'Antwort an den Kunden',
-    state.lastResult.customerReply,
+    state.lastResult.customerReply || '',
     '',
     'Sinnvolle Rückfragen',
-    ...state.lastResult.followUpQuestions.map((q, i) => `${i + 1}. ${q}`),
+    ...(state.lastResult.followUpQuestions || []).map((q, i) => `${i + 1}. ${q}`),
     '',
     'Interne Angebotsbasis',
-    ...state.lastResult.quoteBase.map(item => `- ${item}`),
+    ...(state.lastResult.quoteBase || []).map(item => `- ${item}`),
     '',
-    `Nächster Schritt: ${state.lastResult.nextStep}`
+    `Nächster Schritt: ${state.lastResult.nextStep || ''}`
   ].join('\n');
 }
 
@@ -158,6 +173,7 @@ async function handleCopy(type = 'all') {
 
 async function generateAnswer() {
   const formData = getFormData();
+
   if (!formData.customerInquiry.trim()) {
     showError('Bitte zuerst eine Kundenanfrage eingeben.');
     return;
@@ -173,6 +189,7 @@ async function generateAnswer() {
     });
 
     const payload = await response.json();
+
     if (!response.ok || !payload?.ok) {
       throw new Error(payload?.error || 'Die Generierung ist fehlgeschlagen.');
     }
@@ -194,6 +211,7 @@ function resetForm() {
 async function init() {
   const base = getPortalBasePath();
   state.slug = getSlugFromPath();
+
   const [config, knowledge, cases, uiText] = await Promise.all([
     fetchJson(`${base}/config.json`),
     fetchJson(`${base}/business-knowledge.json`),
@@ -216,6 +234,7 @@ async function init() {
     event.preventDefault();
     generateAnswer();
   });
+
   $('resetBtn').addEventListener('click', resetForm);
   $('exampleBtn').addEventListener('click', () => loadExample(0));
   $('copyReplyBtn').addEventListener('click', () => handleCopy('reply'));
