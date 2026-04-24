@@ -33,7 +33,11 @@
     "Innenaufteilung",
     "Materialwunsch: Weiß/Lack, Dekor, Furnier oder Massivholz",
     "Projektort",
-    "gewünschter Zeitrahmen"
+    "gewünschter Zeitrahmen",
+    "Bestandsküche / Hersteller / betroffene Elemente",
+    "Geräte und Anschlüsse im Bestand",
+    "Arbeitsplatte neu oder anpassen",
+    "Bestand optisch übernehmen oder bewusst absetzen"
   ],
   "preferredPhrasing": [
     "Das ist grundsätzlich gut machbar.",
