@@ -29,7 +29,9 @@ function renderHeader() {
   $('portalText').textContent = state.uiText.heroText;
 
   const logoBadge = document.querySelector('.logo-badge');
-  if (logoBadge) logoBadge.textContent = (state.config.systemName || 'AW').slice(0, 2).toUpperCase();
+  if (logoBadge) {
+    logoBadge.textContent = (state.config.systemName || 'AW').slice(0, 2).toUpperCase();
+  }
 
   $('privacyHint').textContent = state.uiText.privacyHint;
   $('knowledgeTitle').textContent = state.uiText.knowledgeTitle;
@@ -40,6 +42,9 @@ function renderHeader() {
 }
 
 function renderFormOptions() {
+  $('inquiryType').innerHTML = '';
+  $('contactChannel').innerHTML = '';
+
   for (const type of state.config.inquiryTypes) {
     const option = document.createElement('option');
     option.value = type;
@@ -124,7 +129,7 @@ function formatParagraphs(text = '') {
 function renderResult(data, formData) {
   state.lastResult = data;
 
-  $('customerReplyOutput').innerHTML = `<p>${formatParagraphs(data.customerReply)}</p>`;
+  $('customerReplyOutput').innerHTML = `<p>${formatParagraphs(data.customerReply || '')}</p>`;
   $('followUpQuestionsOutput').innerHTML = (data.followUpQuestions || [])
     .map(item => `<li>${escapeHtml(item)}</li>`)
     .join('');
@@ -142,12 +147,20 @@ function renderResult(data, formData) {
 function buildCopyText(type = 'all') {
   if (!state.lastResult) return '';
 
-  if (type === 'reply') return state.lastResult.customerReply || '';
-  if (type === 'questions') {
-    return (state.lastResult.followUpQuestions || []).map((q, i) => `${i + 1}. ${q}`).join('\n');
+  if (type === 'reply') {
+    return state.lastResult.customerReply || '';
   }
+
+  if (type === 'questions') {
+    return (state.lastResult.followUpQuestions || [])
+      .map((q, i) => `${i + 1}. ${q}`)
+      .join('\n');
+  }
+
   if (type === 'quote') {
-    return (state.lastResult.quoteBase || []).map(item => `- ${item}`).join('\n');
+    return (state.lastResult.quoteBase || [])
+      .map(item => `- ${item}`)
+      .join('\n');
   }
 
   return [
