@@ -73,13 +73,6 @@
               </div>
 
               <div class="field">
-                <div class="label-row"><label for="outputGoal">Ziel des Outputs</label></div>
-                <select id="outputGoal">
-                  <option>Antwort + Rückfragen + Angebotsbasis</option>
-                </select>
-              </div>
-
-              <div class="field">
                 <div class="label-row"><label for="customerInquiry">Kundenanfrage</label></div>
                 <textarea id="customerInquiry" required placeholder="Guten Tag,
 
@@ -161,7 +154,7 @@ Können Sie uns sagen, ob so etwas machbar ist und wie der nächste Schritt wär
         <div class="output-top">
           <div>
             <h3>Antwort wird erstellt …</h3>
-            <p>Die Anfrage wird gerade mit den hinterlegten Betriebsdaten abgeglichen und verarbeitet.</p>
+            <p>Die Anfrage wird gerade mit den hinterlegten Betriebsangaben abgeglichen und verarbeitet.</p>
           </div>
         </div>
         <div class="output-body">
@@ -184,6 +177,7 @@ Können Sie uns sagen, ob so etwas machbar ist und wie der nächste Schritt wär
             <button id="copyAllBtn" class="btn btn-secondary" type="button">Alles kopieren</button>
           </div>
         </div>
+
         <div class="output-body output-stack">
           <div class="result-block">
             <div class="result-head">
@@ -218,10 +212,12 @@ Können Sie uns sagen, ob so etwas machbar ist und wie der nächste Schritt wär
 
           <div class="meta-grid">
             <div class="meta-card"><strong>Anfragetyp</strong><p id="metaType">–</p></div>
-            <div class="meta-card"><strong>Output-Ziel</strong><p id="metaGoal">–</p></div>
             <div class="meta-card"><strong>Kontext</strong><p id="metaContext">–</p></div>
           </div>
-          <div class="footer-mini">Teste hier live, wie aus einer normalen Kundenanfrage in Sekunden eine versendbare Antwort und eine belastbare Angebotsgrundlage entstehen.</div>
+
+          <div class="footer-mini">
+            Teste hier live, wie aus einer normalen Kundenanfrage in Sekunden eine versendbare Antwort und eine belastbare Angebotsgrundlage entstehen.
+          </div>
         </div>
       </section>
 
