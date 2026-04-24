@@ -1,11 +1,11 @@
 {
-  "heroTitle": "So arbeitet AnfrageWerk in der Praxis",
-  "heroText": "Füge eine Anfrage ein oder lade das Beispiel. AnfrageWerk erzeugt daraus eine passende Kundenantwort, sinnvolle Rückfragen und eine saubere Angebotsbasis – direkt im Browser.",
-  "submitLabel": "Antwort live erstellen",
+  "heroTitle": "So wird aus einer Anfrage sofort eine verwertbare Arbeitsgrundlage",
+  "heroText": "AnfrageWerk erstellt aus einer normalen Kundenanfrage in Sekunden eine professionelle Antwort, die richtigen Rückfragen und eine saubere Angebotsbasis. So sparen Betriebe Zeit und lassen weniger Anfragen liegen.",
+  "submitLabel": "Antwort erzeugen",
   "resetLabel": "Eingabe leeren",
-  "exampleLabel": "Beispielanfrage laden",
-  "copyLabel": "Antwort kopieren",
-  "knowledgeTitle": "Hinterlegtes Betriebswissen",
-  "outputTitle": "Generierte Ausgabe",
-  "privacyHint": "Bitte in der Demo keine sensiblen personenbezogenen Daten eingeben."
+  "exampleLabel": "Musteranfrage laden",
+  "copyLabel": "Ergebnis kopieren",
+  "knowledgeTitle": "Hinterlegte Betriebsdaten",
+  "outputTitle": "Ergebnis",
+  "privacyHint": "Bitte keine sensiblen personenbezogenen Daten eingeben."
 }
