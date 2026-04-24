@@ -5,26 +5,13 @@
       "type": "Maßanfertigung",
       "contactChannel": "E-Mail",
       "urgency": "Normal",
-      "tone": "Freundlich & professionell",
+      "tone": "Kurz & sachlich",
       "goal": "Antwort + Rückfragen + Angebotsbasis",
       "projectLocation": "Nürnberg",
       "desiredTimeline": "innerhalb der nächsten 6 Wochen",
       "photosAvailable": "Ja",
-      "internalNote": "Altbauwand vermutlich uneben; Aufmaß wahrscheinlich sinnvoll",
-      "inquiry": "Guten Tag, wir möchten für unser Esszimmer einen maßgefertigten Einbauschrank anfertigen lassen. Die Wand ist ca. 3,10 m breit, Altbau, teilweise leicht uneben. Gewünscht ist viel Stauraum, eher schlicht, in Weiß oder hellem Holz. Fotos haben wir bereits gemacht. Können Sie uns sagen, ob so etwas machbar ist und wie der nächste Schritt wäre?"
-    },
-    {
-      "title": "Küchenanpassung nach Umzug",
-      "type": "Küchenanpassung",
-      "contactChannel": "Kontaktformular",
-      "urgency": "Schnell",
-      "tone": "Freundlich & professionell",
-      "goal": "Antwort + Rückfragen + Angebotsbasis",
-      "projectLocation": "Fürth",
-      "desiredTimeline": "möglichst im kommenden Monat",
-      "photosAvailable": "Nein",
-      "internalNote": "Bestehende Küche soll angepasst werden, kein kompletter Neubau",
-      "inquiry": "Hallo, wir ziehen in vier Wochen um und möchten unsere bestehende Küche an die neue Wohnung anpassen lassen. Es geht vermutlich um Kürzungen der Arbeitsplatte, neue Blenden und kleinere Anpassungen an den Schränken. Können Sie so etwas übernehmen und was brauchen Sie von uns für eine erste Einschätzung?"
+      "internalNote": "Altbauwand vermutlich uneben, Aufmaß wahrscheinlich sinnvoll",
+      "inquiry": "Guten Tag, wir möchten für unser Esszimmer einen maßgefertigten Einbauschrank anfertigen lassen. Die Wand ist ca. 3,10 m breit, Altbau, teilweise leicht uneben. Gewünscht ist viel Stauraum, eher schlicht, in Weiß oder hellem Holz. Können Sie uns sagen, ob so etwas machbar ist und wie der nächste Schritt wäre?"
     }
   ]
 }
