@@ -18,20 +18,38 @@
     "Keine verbindlichen Preise ohne Sichtung oder Aufmaß",
     "Bei Altbau und Einbausituationen früh auf Aufmaß hinführen",
     "Den nächsten Schritt klar benennen, wenn er fachlich naheliegt",
-    "Terminangaben nur nach Sichtung der Unterlagen belastbarer einordnen"
+    "Terminangaben erst nach Sichtung der Unterlagen belastbarer einordnen"
   ],
   "noGos": [
     "keine Preiszusage aus der Ferne",
     "keine unrealistischen Zusagen",
     "keine unnötig weichen Formulierungen",
-    "keine zu frühen Logistikfragen ohne Relevanz"
+    "keine doppelten Rückfragen zu bereits genannten Informationen",
+    "keine zu frühen Logistikfragen ohne erkennbare Relevanz"
   ],
   "qualificationPoints": [
     "Breite, Höhe und gewünschte Tiefe",
-    "Fotos der Gesamtwand und Anschlüsse",
+    "Fotos der Gesamtwand und der seitlichen Anschlüsse",
     "Innenaufteilung",
     "Materialwunsch: Weiß/Lack, Dekor, Furnier oder Massivholz",
     "Projektort",
     "gewünschter Zeitrahmen"
+  ],
+  "preferredPhrasing": [
+    "Das ist grundsätzlich gut machbar.",
+    "Wir prüfen die Unterlagen vorab und stimmen danach den Aufmaßtermin mit Ihnen ab.",
+    "Bitte schicken Sie uns dafür die Fotos und die groben Maße."
+  ],
+  "avoidPhrasing": [
+    "so ein Einbauschrank",
+    "eventuell",
+    "möglicherweise",
+    "Dann können wir den nächsten Schritt direkt festmachen.",
+    "einschätzen, ob ein Aufmaß sinnvoll ist"
+  ],
+  "nextStepPatterns": [
+    "Unterlagen prüfen, danach Aufmaßtermin abstimmen",
+    "Fotos und grobe Maße anfordern, dann Einbausituation vorprüfen",
+    "Altbau-Situation zuerst aufnehmen, dann Ausführung vorbereiten"
   ]
 }
