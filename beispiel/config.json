@@ -1,16 +1,16 @@
 {
-  "systemName": "AnfrageWerk Demo",
-  "businessName": "Demo-Betrieb Innenausbau",
+  "systemName": "AnfrageWerk Live-Demo",
+  "businessName": "Beispielbetrieb Schreinerei & Innenausbau",
   "tagline": "Live-Demo für schnellere Antworten, bessere Rückfragen und eine sauberere Angebotsvorbereitung.",
   "region": "Metropolregion Nürnberg",
   "primaryColor": "#244e3d",
   "secondaryColor": "#5a8a78",
   "inquiryTypes": [
-    "Allgemeine Anfrage",
     "Maßanfertigung",
     "Innenausbau",
+    "Küchenanpassung",
     "Reparatur / Nachbesserung",
-    "Küchenanpassung"
+    "Allgemeine Anfrage"
   ],
   "contactChannels": [
     "E-Mail",

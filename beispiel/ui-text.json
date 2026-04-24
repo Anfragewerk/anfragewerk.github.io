@@ -1,11 +1,11 @@
 {
-  "heroTitle": "So wird aus einer Anfrage sofort eine verwertbare Arbeitsgrundlage",
-  "heroText": "AnfrageWerk erstellt aus einer normalen Kundenanfrage in Sekunden eine professionelle Antwort, die richtigen Rückfragen und eine saubere Angebotsbasis. So sparen Betriebe Zeit und lassen weniger Anfragen liegen.",
+  "heroTitle": "So wird aus einer Anfrage in Sekunden eine verwertbare Arbeitsgrundlage",
+  "heroText": "AnfrageWerk erstellt aus einer normalen Kundenanfrage sofort eine versendbare Antwort, die richtigen Rückfragen und eine saubere Angebotsbasis. So sparen Betriebe Zeit, reagieren schneller und lassen weniger Anfragen liegen.",
   "submitLabel": "Antwort erzeugen",
   "resetLabel": "Eingabe leeren",
   "exampleLabel": "Musteranfrage laden",
   "copyLabel": "Ergebnis kopieren",
   "knowledgeTitle": "Hinterlegte Betriebsdaten",
   "outputTitle": "Ergebnis",
-  "privacyHint": "Bitte keine sensiblen personenbezogenen Daten eingeben."
+  "privacyHint": "Bitte in der Demo keine sensiblen personenbezogenen Daten eingeben."
 }

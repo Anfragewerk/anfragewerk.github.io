@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portal – AnfrageWerk</title>
+  <title>Live-Demo – AnfrageWerk</title>
   <link rel="stylesheet" href="../assets/css/portal.css" />
 </head>
 <body>
   <header class="portal-header">
     <div class="container portal-topbar">
       <div class="portal-brand">
-        <div class="logo-badge">HA</div>
+        <div class="logo-badge">AW</div>
         <div>
           <h1 id="systemName">System</h1>
           <p id="tagline">Lade Daten …</p>
@@ -27,13 +27,10 @@
   <main class="main-wrap">
     <div class="container">
       <section class="hero-card">
-        <h2 id="portalTitle">So verarbeitet AnfrageWerk eine echte Kundenanfrage in Sekunden</h2>
+        <h2 id="portalTitle">So wird aus einer Anfrage in Sekunden eine verwertbare Arbeitsgrundlage</h2>
         <p id="portalText">
-          Aus einer unstrukturierten Anfrage entsteht sofort:<br />
-          – eine fertige Kundenantwort<br />
-          – die richtigen Rückfragen<br />
-          – eine klare Angebotsbasis<br /><br />
-          Genau das spart Zeit und sorgt dafür, dass weniger Anfragen verloren gehen.
+          AnfrageWerk erstellt aus einer normalen Kundenanfrage sofort eine versendbare Antwort, die richtigen Rückfragen und eine saubere Angebotsbasis.<br /><br />
+          Genau das hilft Betrieben, schneller zu reagieren, Angebote besser vorzubereiten und weniger Anfragen im Alltag versanden zu lassen.
         </p>
       </section>
 
@@ -41,7 +38,7 @@
         <section class="panel">
           <div class="panel-head">
             <h3>Anfrage eingeben</h3>
-            <p id="privacyHint">Bitte keine sensiblen Daten eingeben.</p>
+            <p id="privacyHint">Bitte in der Demo keine sensiblen personenbezogenen Daten eingeben.</p>
           </div>
           <div class="panel-body">
             <form id="portalForm">
@@ -69,8 +66,8 @@
                   <div class="label-row"><label for="tone">Ton</label></div>
                   <select id="tone">
                     <option>Freundlich & professionell</option>
-                    <option>Etwas persönlicher</option>
                     <option>Kurz & sachlich</option>
+                    <option>Etwas persönlicher</option>
                   </select>
                 </div>
               </div>
@@ -79,9 +76,6 @@
                 <div class="label-row"><label for="outputGoal">Ziel des Outputs</label></div>
                 <select id="outputGoal">
                   <option>Antwort + Rückfragen + Angebotsbasis</option>
-                  <option>Nur Antwort</option>
-                  <option>Nur Rückfragen</option>
-                  <option>Nur interne Angebotsbasis</option>
                 </select>
               </div>
 
@@ -89,15 +83,11 @@
                 <div class="label-row"><label for="customerInquiry">Kundenanfrage</label></div>
                 <textarea id="customerInquiry" required placeholder="Guten Tag,
 
-wir möchten für unser Esszimmer einen Einbauschrank anfertigen lassen.
-Die Wand ist ca. 3,10 m breit, allerdings handelt es sich um einen Altbau, sodass sie nicht ganz gerade ist.
+wir möchten für unser Esszimmer einen Einbauschrank anfertigen lassen. Die Wand ist ca. 3,10 m breit, allerdings handelt es sich um einen Altbau, sodass sie nicht ganz gerade ist.
 
-Der Schrank soll möglichst viel Stauraum bieten und optisch eher schlicht gehalten sein (weiß oder helles Holz).
+Der Schrank soll möglichst viel Stauraum bieten und optisch eher schlicht gehalten sein (weiß oder helles Holz). Fotos haben wir bereits gemacht.
 
-Wir würden das Projekt gerne innerhalb der nächsten 6 Wochen umsetzen.
-Fotos haben wir bereits gemacht und können wir gerne zusenden.
-
-Viele Grüße"></textarea>
+Können Sie uns sagen, ob so etwas machbar ist und wie der nächste Schritt wäre?"></textarea>
               </div>
 
               <div class="grid-2">
@@ -127,8 +117,8 @@ Viele Grüße"></textarea>
               </div>
 
               <div class="actions">
-                <button id="submitBtn" class="btn btn-primary" type="submit">Antwort erstellen</button>
-                <button id="exampleBtn" class="btn btn-secondary" type="button">Beispiel laden</button>
+                <button id="submitBtn" class="btn btn-primary" type="submit">Antwort erzeugen</button>
+                <button id="exampleBtn" class="btn btn-secondary" type="button">Musteranfrage laden</button>
                 <button id="resetBtn" class="btn btn-ghost" type="button">Eingabe leeren</button>
               </div>
             </form>
@@ -137,8 +127,8 @@ Viele Grüße"></textarea>
 
         <aside class="panel">
           <div class="panel-head">
-            <h3 id="knowledgeTitle">Betriebswissen</h3>
-            <p>AnfrageWerk berücksichtigt hinterlegte Betriebsdaten wie Leistungen, Regeln und typische Anforderungen — damit Antworten nicht allgemein, sondern praxistauglich ausfallen.</p>
+            <h3 id="knowledgeTitle">Hinterlegte Betriebsdaten</h3>
+            <p>Die Demo arbeitet mit hinterlegten Leistungen, Regeln und typischen Anforderungen. Dadurch fällt die Ausgabe nicht allgemein, sondern praxistauglich aus.</p>
           </div>
           <div class="panel-body">
             <div class="info-list">
@@ -171,7 +161,7 @@ Viele Grüße"></textarea>
         <div class="output-top">
           <div>
             <h3>Antwort wird erstellt …</h3>
-            <p>Die Anfrage wird gerade mit dem Betriebswissen kombiniert und verarbeitet.</p>
+            <p>Die Anfrage wird gerade mit den hinterlegten Betriebsdaten abgeglichen und verarbeitet.</p>
           </div>
         </div>
         <div class="output-body">
@@ -186,8 +176,8 @@ Viele Grüße"></textarea>
       <section id="resultCard" class="output-card hidden">
         <div class="output-top">
           <div>
-            <h3 id="outputTitle">System-Ausgabe</h3>
-            <p>Aus einer Anfrage entstehen in Sekunden eine Kundenantwort, sinnvolle Rückfragen und eine klare Angebotsbasis.</p>
+            <h3 id="outputTitle">Ergebnis</h3>
+            <p>So sieht eine Ausgabe aus, mit der ein Betrieb direkt weiterarbeiten kann.</p>
           </div>
           <div class="output-actions">
             <button id="copyReplyBtn" class="btn btn-primary" type="button">Antwort kopieren</button>
@@ -231,7 +221,7 @@ Viele Grüße"></textarea>
             <div class="meta-card"><strong>Output-Ziel</strong><p id="metaGoal">–</p></div>
             <div class="meta-card"><strong>Kontext</strong><p id="metaContext">–</p></div>
           </div>
-          <div class="footer-mini">Teste hier live, wie aus einer Kundenanfrage direkt eine versendbare Antwort und eine belastbare Angebotsgrundlage entstehen.</div>
+          <div class="footer-mini">Teste hier live, wie aus einer normalen Kundenanfrage in Sekunden eine versendbare Antwort und eine belastbare Angebotsgrundlage entstehen.</div>
         </div>
       </section>
 
