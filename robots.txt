@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /worker/
+Disallow: /horst/
+Disallow: /.github/
+
+Sitemap: https://anfragewerk.github.io/sitemap.xml
