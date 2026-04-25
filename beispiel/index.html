@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Live-Demo – AnfrageWerk</title>
+  <title>Beispiel - AnfrageWerk</title>
   <link rel="stylesheet" href="../assets/css/portal.css" />
 </head>
 <body>
@@ -12,6 +12,7 @@
       <div class="portal-brand">
         <div class="logo-badge">AW</div>
         <div>
+          <span class="demo-label">Öffentliche Demo</span>
           <h1 id="systemName">System</h1>
           <p id="tagline">Lade Daten …</p>
         </div>
@@ -27,11 +28,20 @@
   <main class="main-wrap">
     <div class="container">
       <section class="hero-card">
-        <h2 id="portalTitle">So wird aus einer Anfrage in Sekunden eine verwertbare Arbeitsgrundlage</h2>
+        <div class="hero-copy">
+          <span class="demo-label">Musterbetrieb Schreinerei & Innenausbau</span>
+          <h2 id="portalTitle">So wird aus einer Kundenanfrage eine klare Arbeitsgrundlage</h2>
+        </div>
         <p id="portalText">
-          AnfrageWerk erstellt aus einer normalen Kundenanfrage sofort eine versendbare Antwort, die richtigen Rückfragen und eine saubere Angebotsbasis.<br /><br />
-          Genau das hilft Betrieben, schneller zu reagieren, Angebote besser vorzubereiten und weniger Anfragen im Alltag versanden zu lassen.
+          Fügen Sie eine Anfrage ein oder laden Sie die Musteranfrage. AnfrageWerk bereitet daraus einen Antwortvorschlag, passende Rückfragen, eine Angebotsbasis und den nächsten Schritt vor.<br /><br />
+          Die Demo zeigt einen Musterbetrieb. Bitte geben Sie keine sensiblen oder echten Kundendaten ein.
         </p>
+        <div class="demo-flow" aria-label="Was die Demo zeigt">
+          <span>Anfrage eingeben</span>
+          <span>Antwort erhalten</span>
+          <span>Rückfragen klären</span>
+          <span>Angebot vorbereiten</span>
+        </div>
       </section>
 
       <div class="layout-grid">
@@ -121,7 +131,7 @@ Können Sie uns sagen, ob so etwas machbar ist und wie der nächste Schritt wär
         <aside class="panel">
           <div class="panel-head">
             <h3 id="knowledgeTitle">Berücksichtigte Betriebsangaben</h3>
-            <p>AnfrageWerk berücksichtigt Leistungen, typische Rahmenbedingungen und wichtige Rückfragen des Betriebs. So entsteht keine Standardantwort, sondern eine brauchbare Grundlage für die weitere Bearbeitung.</p>
+            <p>Die Demo berücksichtigt typische Leistungen, Arbeitsweise und Rückfragen eines Musterbetriebs. So entsteht kein allgemeiner Text, sondern eine brauchbare Grundlage für die Bearbeitung.</p>
           </div>
           <div class="panel-body">
             <div class="info-list">
@@ -154,7 +164,7 @@ Können Sie uns sagen, ob so etwas machbar ist und wie der nächste Schritt wär
         <div class="output-top">
           <div>
             <h3>Antwort wird erstellt …</h3>
-            <p>Die Anfrage wird gerade mit den hinterlegten Betriebsangaben abgeglichen und verarbeitet.</p>
+            <p>Die Anfrage wird gerade gelesen und für den nächsten Arbeitsschritt vorbereitet.</p>
           </div>
         </div>
         <div class="output-body">
@@ -170,7 +180,7 @@ Können Sie uns sagen, ob so etwas machbar ist und wie der nächste Schritt wär
         <div class="output-top">
           <div>
             <h3 id="outputTitle">Ergebnis</h3>
-            <p>So sieht eine Ausgabe aus, mit der ein Betrieb direkt antworten, Rückfragen klären und die Angebotsvorbereitung anstoßen kann.</p>
+            <p>Die Ausgabe ist so aufgebaut, dass ein Betrieb direkt prüfen, kopieren und weiterarbeiten kann.</p>
           </div>
           <div class="output-actions">
             <button id="copyReplyBtn" class="btn btn-primary" type="button">Antwort kopieren</button>
@@ -197,7 +207,7 @@ Können Sie uns sagen, ob so etwas machbar ist und wie der nächste Schritt wär
 
           <div class="result-block">
             <div class="result-head">
-              <h4>Interne Angebotsbasis</h4>
+              <h4>Angebotsbasis</h4>
               <button id="copyQuoteBtn" class="mini-copy" type="button">Kopieren</button>
             </div>
             <ul id="quoteBaseOutput" class="result-list"></ul>
@@ -216,7 +226,7 @@ Können Sie uns sagen, ob so etwas machbar ist und wie der nächste Schritt wär
           </div>
 
           <div class="footer-mini">
-            Teste hier live, wie aus einer normalen Kundenanfrage in Sekunden eine versendbare Antwort und eine belastbare Angebotsgrundlage entstehen.
+            Diese Demo zeigt, wie aus einer normalen Kundenanfrage eine Antwort, sinnvolle Rückfragen und eine Angebotsgrundlage entstehen.
           </div>
         </div>
       </section>
@@ -224,8 +234,8 @@ Können Sie uns sagen, ob so etwas machbar ist und wie der nächste Schritt wär
       <section id="errorCard" class="output-card hidden error-card">
         <div class="output-top">
           <div>
-            <h3>Generierung fehlgeschlagen</h3>
-            <p id="errorMessage">Bitte Worker-Konfiguration und API-Verbindung prüfen.</p>
+            <h3>Antwort konnte nicht erstellt werden</h3>
+            <p id="errorMessage">Bitte versuchen Sie es gleich noch einmal oder laden Sie die Musteranfrage neu.</p>
           </div>
         </div>
       </section>

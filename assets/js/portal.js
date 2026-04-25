@@ -170,7 +170,7 @@ function buildCopyText(type = 'all') {
     'Sinnvolle Rückfragen',
     ...(state.lastResult.followUpQuestions || []).map((q, i) => `${i + 1}. ${q}`),
     '',
-    'Interne Angebotsbasis',
+    'Angebotsbasis',
     ...(state.lastResult.quoteBase || []).map(item => `- ${item}`),
     '',
     `Nächster Schritt: ${state.lastResult.nextStep || ''}`
@@ -204,12 +204,12 @@ async function generateAnswer() {
     const payload = await response.json();
 
     if (!response.ok || !payload?.ok) {
-      throw new Error(payload?.error || 'Die Generierung ist fehlgeschlagen.');
+      throw new Error('Antwort konnte nicht erstellt werden. Bitte versuchen Sie es gleich noch einmal.');
     }
 
     renderResult(payload.data, formData);
   } catch (error) {
-    showError(error.message || 'Die Generierung ist fehlgeschlagen.');
+    showError(error.message || 'Antwort konnte nicht erstellt werden. Bitte versuchen Sie es gleich noch einmal.');
   }
 }
 
@@ -259,6 +259,6 @@ async function init() {
 
 init().catch((error) => {
   console.error(error);
-  $('portalTitle').textContent = 'Fehler beim Laden des Portals';
-  $('portalText').textContent = 'Bitte prüfen, ob alle JSON-Dateien vorhanden sind und korrekt geladen werden.';
+  $('portalTitle').textContent = 'Die Demo konnte nicht vollständig geladen werden';
+  $('portalText').textContent = 'Bitte laden Sie die Seite neu. Falls der Fehler bleibt, versuchen Sie es später noch einmal.';
 });
