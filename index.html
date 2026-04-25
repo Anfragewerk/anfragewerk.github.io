@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AnfrageWerk – Eigene Anfrage-Systeme für Handwerksbetriebe</title>
-  <meta name="description" content="Eigene Anfrage-Systeme für lokale Handwerksbetriebe: Anfragen schneller beantworten, Rückfragen strukturieren und Angebote besser vorbereiten." />
+  <title>AnfrageWerk - Kundenanfragen schneller beantworten</title>
+  <meta name="description" content="AnfrageWerk richtet Handwerksbetrieben ein eigenes Anfrage-System ein: Kundenanfragen schneller beantworten, wichtige Rückfragen nicht vergessen und Angebote sauberer vorbereiten." />
   <link rel="stylesheet" href="./assets/css/main.css" />
   <script type="application/ld+json">
 {
@@ -16,7 +16,7 @@
       "name": "AnfrageWerk",
       "url": "https://anfragewerk.github.io/",
       "email": "anfragewerk@web.de",
-      "description": "AnfrageWerk erstellt KI-gestützte Anfrage-Systeme für lokale Handwerksbetriebe, damit aus Kundenanfragen schneller verwertbare Antworten, Rückfragen und Angebotsgrundlagen entstehen."
+      "description": "AnfrageWerk richtet Handwerksbetrieben ein eigenes Anfrage-System ein, damit Kundenanfragen schneller beantwortet und Angebote besser vorbereitet werden."
     },
     {
       "@type": "WebSite",
@@ -29,13 +29,12 @@
       "inLanguage": "de-DE"
     },
     {
-      "@type": "SoftwareApplication",
-      "@id": "https://anfragewerk.github.io/#software",
+      "@type": "Service",
+      "@id": "https://anfragewerk.github.io/#service",
       "name": "AnfrageWerk",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
       "url": "https://anfragewerk.github.io/",
-      "description": "Webbasiertes Anfrage-System für lokale Handwerksbetriebe. Aus Kundenanfragen entstehen Antwortentwurf, Rückfragen und Angebotsbasis.",
+      "serviceType": "Anfragebearbeitung für Handwerksbetriebe",
+      "description": "AnfrageWerk hilft Handwerksbetrieben, aus Kundenanfragen einen Antwortvorschlag, passende Rückfragen und eine Grundlage für die Angebotsvorbereitung zu machen.",
       "publisher": {
         "@id": "https://anfragewerk.github.io/#organization"
       },
@@ -48,11 +47,11 @@
 <body>
   <header class="site-header">
     <div class="container nav-row">
-      <a class="brand" href="./">AnfrageWerk</a>
-      <nav class="nav-links">
-        <a href="#system">System</a>
-        <a href="#zielgruppen">Für wen</a>
-        <a href="#modell">Modell</a>
+      <a class="brand" href="./" aria-label="AnfrageWerk Startseite">AnfrageWerk</a>
+      <nav class="nav-links" aria-label="Hauptnavigation">
+        <a href="#ablauf">So funktioniert’s</a>
+        <a href="#betriebe">Für Betriebe</a>
+        <a href="#angebot">Angebot</a>
         <a href="./beispiel/">Beispiel</a>
       </nav>
     </div>
@@ -61,83 +60,73 @@
   <main>
     <section class="hero-section">
       <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">Phase 1.5 · modernes Kundenportal mit echter Live-Generierung</span>
-          <h1>Mehr Aufträge aus Anfragen. Weniger Chaos im Büro.</h1>
-          <p class="lead">Eigene Anfrage-Systeme für Handwerksbetriebe: Anfrage eingeben, live Antwort erzeugen, Rückfragen strukturieren und die Angebotsbasis direkt im Portal erhalten.</p>
+        <div class="hero-copy">
+          <span class="eyebrow">Für Handwerksbetriebe mit vielen Kundenanfragen</span>
+          <h1>Kundenanfragen schneller beantworten. Angebote besser vorbereiten.</h1>
+          <p class="lead">AnfrageWerk richtet Handwerksbetrieben ein eigenes Anfrage-System ein: Aus einer Kundenanfrage entstehen Antwortvorschlag, passende Rückfragen und eine klare Grundlage für die Angebotsvorbereitung.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="./beispiel/">Beispiel ansehen</a>
-            <a class="btn btn-secondary" href="#kontakt">Kontakt</a>
+            <a class="btn btn-secondary" href="#kontakt">Kontakt aufnehmen</a>
           </div>
-          <ul class="hero-bullets">
-            <li>eigene Unterseite pro Kunde</li>
-            <li>kundenspezifische Wissensbasis</li>
-            <li>Antworten, Rückfragen und Angebotsbasis direkt kopierbar</li>
-          </ul>
+          <div class="trust-row" aria-label="Wichtigste Vorteile">
+            <span>schneller auf Anfragen reagieren</span>
+            <span>wichtige Rückfragen nicht vergessen</span>
+            <span>Angebote sauberer vorbereiten</span>
+          </div>
         </div>
-        <div class="preview-shell">
-          <div class="preview-card">
-            <div class="preview-top">
-              <strong>AnfrageWerk Demo</strong>
-              <span>echtes Beispielportal</span>
+
+        <div class="hero-visual" aria-label="Beispielhafte Anfragebearbeitung">
+          <div class="desk-panel">
+            <div class="desk-top">
+              <span>Anfrage vom Kunden</span>
+              <strong>08:42 Uhr</strong>
             </div>
-            <div class="preview-body">
-              <div class="preview-column">
-                <small>Anfrage</small>
-                <div class="preview-box tall"></div>
+            <div class="note-card">
+              <p>Einbauschrank im Altbau, ca. 3,10 m breit. Fotos vorhanden. Der Kunde fragt nach Machbarkeit und nächstem Schritt.</p>
+            </div>
+            <div class="result-list">
+              <div class="result-item">
+                <span>1</span>
+                <p>Antwortvorschlag vorbereiten</p>
               </div>
-              <div class="preview-column">
-                <small>Betriebswissen</small>
-                <div class="preview-box"></div>
-                <div class="preview-box"></div>
+              <div class="result-item">
+                <span>2</span>
+                <p>Wichtige Rückfragen sammeln</p>
+              </div>
+              <div class="result-item">
+                <span>3</span>
+                <p>Angebotsbasis sauber ordnen</p>
               </div>
             </div>
-            <div class="preview-output"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="system" class="section">
-      <div class="container">
+    <section id="ablauf" class="section section-contrast">
+      <div class="container split-layout">
         <div class="section-head">
-          <span class="eyebrow">So funktioniert es</span>
-          <h2>Einfach in der Nutzung. Durchdacht im Aufbau.</h2>
+          <span class="eyebrow">So funktioniert’s</span>
+          <h2>So hilft AnfrageWerk im Alltag</h2>
+          <p>Die Arbeit bleibt einfach: Anfrage erfassen, Ergebnis prüfen und im gewohnten Arbeitsweg weiterverwenden.</p>
         </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <h3>1. Anfrage erfassen</h3>
-            <p>Typ, Kanal, Dringlichkeit und Originaltext werden im Portal erfasst.</p>
+        <div class="steps">
+          <article class="step-row">
+            <strong>Anfrage einfügen</strong>
+            <p>Eine E-Mail, WhatsApp-Nachricht, Formularanfrage oder Telefonnotiz wird in das Anfrage-System übernommen.</p>
           </article>
-          <article class="feature-card">
-            <h3>2. Wissen einbeziehen</h3>
-            <p>Das System zieht betriebliche Regeln, Tonalität, Leistungen und Qualifizierungsfragen hinzu.</p>
+          <article class="step-row">
+            <strong>Betrieb berücksichtigen</strong>
+            <p>Leistungen, Arbeitsweise, Ton und typische Rückfragen Ihres Betriebs fließen in die Vorbereitung ein.</p>
           </article>
-          <article class="feature-card">
-            <h3>3. Antwort generieren</h3>
-            <p>Ein kleiner Backend-Layer kombiniert Anfrage und Betriebswissen und erzeugt direkt die finale Ausgabe.</p>
+          <article class="step-row">
+            <strong>Antwort erhalten</strong>
+            <p>Sie erhalten einen Antwortvorschlag, sinnvolle Rückfragen und eine klare Grundlage für das Angebot.</p>
           </article>
-          <article class="feature-card">
-            <h3>4. Kopieren & weiterarbeiten</h3>
-            <p>Die generierte Antwort, Rückfragen oder Angebotsbasis können direkt kopiert und weiterverwendet werden.</p>
+          <article class="step-row">
+            <strong>Prüfen und senden</strong>
+            <p>Das Büro prüft den Vorschlag, passt ihn bei Bedarf an und nutzt ihn direkt im Kundenkontakt.</p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="zielgruppen" class="section section-soft">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Geeignet für</span>
-          <h2>Vor allem dort stark, wo Anfragen häufig, aber Zeit knapp ist</h2>
-        </div>
-        <div class="pill-row">
-          <span class="pill">Schreinerei</span>
-          <span class="pill">Elektrik</span>
-          <span class="pill">SHK</span>
-          <span class="pill">Maler</span>
-          <span class="pill">Innenausbau</span>
-          <span class="pill">Küchenbau</span>
         </div>
       </div>
     </section>
@@ -145,66 +134,99 @@
     <section class="section">
       <div class="container compare-grid">
         <article class="compare-card">
-          <span class="eyebrow">Ohne System</span>
-          <h3>Anfragen bleiben Stückwerk</h3>
+          <span class="eyebrow">Ohne AnfrageWerk</span>
+          <h3>Anfragen bleiben liegen</h3>
           <ul>
-            <li>Antworten dauern zu lange</li>
-            <li>wichtige Rückfragen fehlen</li>
-            <li>Angebotsvorbereitung ist unklar</li>
-            <li>jede Antwort beginnt bei null</li>
+            <li>Antworten bleiben im Postfach liegen</li>
+            <li>wichtige Rückfragen kommen zu spät</li>
+            <li>Angebotsvorbereitung startet unsortiert</li>
+            <li>gute Anfragen gehen zwischen Baustelle und Büro unter</li>
           </ul>
         </article>
         <article class="compare-card compare-card-accent">
-          <span class="eyebrow">Mit System</span>
-          <h3>Der Betrieb arbeitet strukturierter</h3>
+          <span class="eyebrow">Mit AnfrageWerk</span>
+          <h3>Anfragen werden verwertbar</h3>
           <ul>
-            <li>klare Eingabemaske</li>
-            <li>konsistente Arbeitslogik</li>
-            <li>ein Klick für die fertige Ausgabe</li>
-            <li>kundenspezifische Wissensbasis</li>
+            <li>klare Antwort als Ausgangspunkt</li>
+            <li>passende Rückfragen auf einen Blick</li>
+            <li>geordnete Grundlage für das Angebot</li>
+            <li>weniger Anfragen bleiben liegen</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <section id="modell" class="section section-soft">
+    <section id="betriebe" class="section section-soft">
       <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Leistungsmodell</span>
-          <h2>So lässt sich das später verkaufen</h2>
+        <div class="section-head section-head-wide">
+          <span class="eyebrow">Für Betriebe</span>
+          <h2>Für Betriebe, bei denen Anfragen oft zwischen Baustelle und Büro hängen bleiben</h2>
+          <p>Besonders hilfreich, wenn Kundenanfragen über mehrere Wege kommen und im Tagesgeschäft schnell beantwortet werden müssen.</p>
         </div>
-        <div class="feature-grid">
+        <div class="pill-row">
+          <span class="pill">Schreinerei</span>
+          <span class="pill">Elektrik</span>
+          <span class="pill">SHK</span>
+          <span class="pill">Malerbetrieb</span>
+          <span class="pill">Innenausbau</span>
+          <span class="pill">Küchenbau</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="angebot" class="section">
+      <div class="container">
+        <div class="section-head section-head-wide">
+          <span class="eyebrow">Angebot</span>
+          <h2>Was Sie bekommen</h2>
+          <p>AnfrageWerk wird so eingerichtet, dass es zu Ihrem Betrieb, Ihren Leistungen und Ihrem Alltag passt.</p>
+        </div>
+        <div class="benefit-grid">
           <article class="feature-card">
+            <span class="card-number">01</span>
             <h3>Einrichtung</h3>
-            <p>Portal-Struktur, Branding, Anfragetypen, erste Wissensbasis und erste Live-Fälle.</p>
+            <p>Ihr eigenes Anfrage-System wird mit passenden Anfragearten, Texten und Arbeitswegen für Ihren Betrieb vorbereitet.</p>
           </article>
           <article class="feature-card">
+            <span class="card-number">02</span>
             <h3>Anpassung</h3>
-            <p>Feintuning je Betrieb: Regeln, Sprache, No-Gos, branchenspezifische Rückfragen.</p>
+            <p>Antwortstil, typische Rückfragen, Leistungen und Besonderheiten werden so angepasst, dass die Ergebnisse im Alltag brauchbar sind.</p>
           </article>
           <article class="feature-card">
-            <h3>Laufende Pflege</h3>
-            <p>Neue Fälle, bessere Antwortlogik, weitere Portalseiten und spätere Ausbau-Module.</p>
+            <span class="card-number">03</span>
+            <h3>Pflege</h3>
+            <p>Wenn neue Anfragearten, bessere Formulierungen oder weitere Abläufe dazukommen, wird das System laufend verbessert.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="kontakt" class="section">
+    <section class="section">
+      <div class="container cta-band">
+        <div>
+          <span class="eyebrow">Beispiel</span>
+          <h2>Sehen Sie sich das Beispiel an</h2>
+          <p>In der Demo sehen Sie, wie aus einer normalen Kundenanfrage eine Antwort, sinnvolle Rückfragen und eine Angebotsgrundlage entstehen.</p>
+        </div>
+        <a class="btn btn-primary" href="./beispiel/">Beispiel ansehen</a>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section contact-section">
       <div class="container contact-card">
         <div>
           <span class="eyebrow">Nächster Schritt</span>
-          <h2>Erst Demo, dann sauberes Setup.</h2>
-          <p>Für die erste Version reicht eine saubere Kontaktmöglichkeit. Formularlogik und CRM können später folgen.</p>
+          <h2>Kontakt aufnehmen</h2>
+          <p>Schreiben Sie kurz, welche Anfragen bei Ihnen am meisten Zeit kosten. Dann lässt sich schnell prüfen, wie AnfrageWerk im Alltag entlasten kann.</p>
         </div>
-        <a class="btn btn-primary" href="mailto:kontakt@deinedomain.de">kontakt@deinedomain.de</a>
+        <a class="btn btn-primary" href="mailto:anfragewerk@web.de">anfragewerk@web.de</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-row">
-      <span>© AnfrageWerk</span>
+      <span>&copy; AnfrageWerk</span>
       <div class="footer-links">
         <a href="./beispiel/">Beispiel</a>
         <a href="./datenschutz/">Datenschutz</a>
