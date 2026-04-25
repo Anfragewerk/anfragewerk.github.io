@@ -4,5 +4,8 @@ Allow: /
 Disallow: /worker/
 Disallow: /horst/
 Disallow: /.github/
+Disallow: /impressum/
+Disallow: /datenschutz/
+
 
 Sitemap: https://anfragewerk.github.io/sitemap.xml
