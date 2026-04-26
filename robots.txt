@@ -2,7 +2,6 @@ User-agent: *
 Allow: /
 
 Disallow: /worker/
-Disallow: /horst/
 Disallow: /.github/
 Disallow: /impressum/
 Disallow: /datenschutz/
