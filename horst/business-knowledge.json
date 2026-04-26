@@ -1,31 +1,38 @@
 {
   "services": [
-    "Maßmöbel",
-    "Einbauschränke",
-    "Innenausbau",
-    "Küchenanpassungen"
+    "Einbauschraenke nach Mass",
+    "Nischenloesungen",
+    "Garderoben",
+    "Kuechenanpassungen im Bestand",
+    "Innenausbau im Altbau",
+    "Reparatur und Nachbesserung bestehender Moebel"
   ],
   "styleRules": [
-    "freundlich",
-    "klar",
-    "hochwertig",
-    "kein übertriebener Werbeton"
+    "ruhig und verbindlich antworten",
+    "freundlich und fachlich bleiben",
+    "nicht werblich uebertreiben",
+    "Machbarkeit vorsichtig einordnen",
+    "den naechsten Schritt klar benennen"
   ],
   "businessRules": [
-    "Keine verbindlichen Preise ohne Maße und Prüfung",
-    "Altbau immer gesondert berücksichtigen",
-    "Keine festen Termine ohne Rücksprache"
+    "keine Preiszusage ohne Sichtung oder Aufmass",
+    "bei Altbau, Nischen oder Dachschraegen aktiv Richtung Aufmass fuehren",
+    "bei Reparaturen zuerst Fotos, Schadensbild, Beschlaege und Masse anfordern",
+    "bei Kuechenanpassungen Bestand, Arbeitsplatte, Geraete, Anschluesse und optische Anpassung abfragen",
+    "keine unnoetigen Logistikfragen in der Erstqualifizierung"
   ],
   "noGos": [
-    "keine Preiszusage aus der Ferne",
-    "keine unrealistischen Zeitversprechen",
-    "keine pauschalen Materialzusagen"
+    "keine verbindlichen Preise aus der Ferne nennen",
+    "keine festen Termine zusagen, bevor Aufwand und Aufmass geklaert sind",
+    "keine Material- oder Farbzusagen ohne Sichtung treffen",
+    "keine langen allgemeinen Erklaerungen statt konkreter Rueckfragen"
   ],
   "qualificationPoints": [
-    "ungefähre Maße",
-    "Materialwunsch",
-    "Fotos vorhanden",
-    "Projektort",
-    "gewünschter Zeitrahmen"
+    "ungefaehre Masse und Fotos",
+    "Projektort im Raum Nuernberg + 30 km",
+    "Altbau, Nische, Dachschraege oder ungerade Waende",
+    "Material- und Farbwunsch",
+    "gewuenschter Zeitraum",
+    "bei Reparaturen Schadensbild, Beschlaege und vorhandene Moebelmasse"
   ]
 }

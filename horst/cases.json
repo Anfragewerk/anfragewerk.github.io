@@ -1,17 +1,52 @@
 {
   "examples": [
     {
-      "title": "Einbauschrank Esszimmer",
-      "type": "Maßanfertigung Möbel",
+      "title": "Einbauschrank im Altbau",
+      "type": "Einbauschrank nach Mass",
       "contactChannel": "E-Mail",
       "urgency": "Normal",
-      "tone": "Freundlich & professionell",
-      "goal": "Antwort + Rückfragen + Angebotsbasis",
-      "projectLocation": "Nürnberg",
-      "desiredTimeline": "möglichst im Frühsommer",
+      "tone": "Ruhig, verbindlich und freundlich",
+      "projectLocation": "Nuernberg-Gostenhof",
+      "desiredTimeline": "wenn moeglich in den naechsten 2 bis 3 Monaten",
       "photosAvailable": "Ja",
-      "internalNote": "Altbau, Wand eventuell uneben",
-      "inquiry": "Guten Tag, wir möchten für unser Esszimmer einen maßgefertigten Einbauschrank anfertigen lassen. Die Wand ist ca. 3,10 m breit, Altbau, teilweise leicht uneben. Wir wünschen uns viel Stauraum, eher helles Holz oder weiß, möglichst schlicht. Können Sie uns sagen, ob so etwas machbar ist und mit welchem zeitlichen Rahmen wir ungefähr rechnen müssten?"
+      "internalNote": "Altbau, Wand vermutlich nicht gerade",
+      "inquiry": "Guten Tag,\n\nwir wohnen in einer Altbauwohnung in Gostenhof und haetten gerne im Schlafzimmer einen Einbauschrank ueber die ganze Wand. Die Wand ist ungefaehr 3,20 m breit, aber wahrscheinlich nicht ganz gerade. Es gibt auch eine hohe Sockelleiste, die man irgendwie beruecksichtigen muesste.\n\nWir haetten gerne etwas Schlichtes in weiss oder hellem Holz, mit viel Stauraum. Ein paar Fotos koennen wir schicken. Koennen Sie so etwas grundsaetzlich machen und wie waere der Ablauf?"
+    },
+    {
+      "title": "Kuechenanpassung im Bestand",
+      "type": "Kuechenanpassung im Bestand",
+      "contactChannel": "Kontaktformular",
+      "urgency": "Schnell",
+      "tone": "Ruhig, verbindlich und freundlich",
+      "projectLocation": "Fuerth",
+      "desiredTimeline": "moeglichst vor dem Einzug Ende Juni",
+      "photosAvailable": "Ja",
+      "internalNote": "Bestandskueche, Arbeitsplatte und Geraete klaeren",
+      "inquiry": "Hallo,\n\nwir ziehen in eine Wohnung in Fuerth und moechten die vorhandene Kueche anpassen lassen. Ein Schrank muss wahrscheinlich gekuerzt werden, die Arbeitsplatte passt nicht ganz und fuer den Geschirrspueler muesste eine Loesung gefunden werden. Die Kueche bleibt grundsaetzlich drin, soll aber ordentlicher aussehen.\n\nIch bin mir nicht sicher, was davon ein Schreiner machen kann. Fotos und grobe Masse habe ich. Waere das etwas fuer Sie?"
+    },
+    {
+      "title": "Garderobe im Eingangsbereich",
+      "type": "Garderobe",
+      "contactChannel": "WhatsApp",
+      "urgency": "Normal",
+      "tone": "Etwas persoenlicher",
+      "projectLocation": "Nuernberg-Moegeldorf",
+      "desiredTimeline": "nicht dringend, aber gerne dieses Quartal",
+      "photosAvailable": "Nein",
+      "internalNote": "Eingangsbereich eng, Nische und Masse anfragen",
+      "inquiry": "Hallo Herr Horst,\n\nwir suchen eine Loesung fuer unseren Eingangsbereich. Es ist kein grosser Flur, eher eine kleine Nische neben der Tuer. Wir haetten gerne Platz fuer Jacken, Schuhe und vielleicht oben noch ein Fach fuer Taschen. Fertige Moebel passen da leider nicht richtig rein.\n\nIch muesste die Stelle noch ausmessen. Koennen Sie uns sagen, welche Angaben Sie brauchen und ob Sie sich so etwas anschauen wuerden?"
+    },
+    {
+      "title": "Reparatur bestehender Einbauschrank",
+      "type": "Reparatur / Nachbesserung",
+      "contactChannel": "Telefonnotiz",
+      "urgency": "Schnell",
+      "tone": "Kurz und sachlich",
+      "projectLocation": "Erlangen",
+      "desiredTimeline": "zeitnah, weil die Tuer kaum noch schliesst",
+      "photosAvailable": "Unbekannt",
+      "internalNote": "Fotos, Beschlaege, Schadensbild und Masse anfordern",
+      "inquiry": "Kunde aus Erlangen hat angerufen: Ein vorhandener Einbauschrank im Flur macht Probleme. Eine Schiebetuer laeuft schwer und unten ist wohl etwas ausgebrochen. Der Schrank ist schon aelter, wurde aber damals auf Mass eingebaut. Kunde weiss nicht, ob man das reparieren kann oder ob Teile getauscht werden muessen.\n\nRueckruf gewuenscht, Fotos kann er vermutlich per Mail schicken."
     }
   ]
 }

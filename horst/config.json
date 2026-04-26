@@ -1,16 +1,17 @@
 {
-  "systemName": "HorstAssist",
+  "systemName": "Schreinerei Horst",
   "businessName": "Schreinerei Horst",
-  "tagline": "Internes Anfrage-System für schnellere Antworten und sauberere Angebotsvorbereitung.",
-  "region": "Nürnberg + 30 km",
-  "primaryColor": "#355c4d",
-  "secondaryColor": "#6c8c7a",
+  "tagline": "Eigenes Anfrage-System fuer Schreinerei und Innenausbau.",
+  "region": "Nuernberg + 30 km",
+  "primaryColor": "#244e3d",
+  "secondaryColor": "#a87532",
   "inquiryTypes": [
-    "Allgemeine Anfrage",
-    "Maßanfertigung Möbel",
-    "Küchenumbau",
-    "Reparatur / Nachbesserung",
-    "Innenausbau"
+    "Einbauschrank nach Mass",
+    "Nischenloesung",
+    "Garderobe",
+    "Kuechenanpassung im Bestand",
+    "Innenausbau im Altbau",
+    "Reparatur / Nachbesserung"
   ],
   "contactChannels": [
     "E-Mail",

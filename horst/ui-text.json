@@ -1,11 +1,11 @@
 {
-  "heroTitle": "Neue Kundenanfrage verarbeiten",
-  "heroText": "Hier wird die Anfrage eingegeben. Das System erzeugt eine Kundenantwort, sinnvolle Rückfragen und eine interne Angebotsbasis.",
-  "submitLabel": "Arbeits-Prompt erzeugen",
+  "heroTitle": "Anfragen fuer Schreinerei Horst sauber vorbereiten",
+  "heroText": "Diese Musterseite zeigt ein eigenes Anfrage-System fuer einen konkreten Schreinerbetrieb. Aus einer Kundenanfrage entstehen ein Antwortvorschlag, sinnvolle Rueckfragen, eine Angebotsbasis und ein naechster Schritt.",
+  "submitLabel": "Antwort vorbereiten",
   "resetLabel": "Eingabe leeren",
-  "exampleLabel": "Beispiel laden",
-  "copyLabel": "Prompt kopieren",
-  "knowledgeTitle": "Betriebswissen",
-  "outputTitle": "Generierte Ausgabe",
-  "privacyHint": "Bitte keine sensiblen personenbezogenen Daten eingeben."
+  "exampleLabel": "Musteranfrage laden",
+  "copyLabel": "Antwort kopieren",
+  "knowledgeTitle": "Betriebsangaben Schreinerei Horst",
+  "outputTitle": "Vorbereitete Anfrage",
+  "privacyHint": "Bitte in diesem Muster keine sensiblen oder echten Kundendaten eingeben."
 }

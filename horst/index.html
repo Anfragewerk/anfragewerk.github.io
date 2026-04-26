@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portal – AnfrageWerk</title>
+  <title>Schreinerei Horst - AnfrageWerk</title>
   <link rel="stylesheet" href="../assets/css/portal.css" />
   <meta name="robots" content="noindex,nofollow,noarchive" />
 </head>
@@ -11,15 +11,16 @@
   <header class="portal-header">
     <div class="container portal-topbar">
       <div class="portal-brand">
-        <div class="logo-badge">HA</div>
+        <div class="logo-badge">SH</div>
         <div>
-          <h1 id="systemName">System</h1>
-          <p id="tagline">Lade Daten …</p>
+          <span class="demo-label">Kundenportal Muster</span>
+          <h1 id="systemName">Schreinerei Horst</h1>
+          <p id="tagline">Eigenes Anfrage-System fuer Schreinerei und Innenausbau.</p>
         </div>
       </div>
       <div class="portal-status">
-        <span class="status-pill" id="businessName">Betrieb</span>
-        <span class="status-pill" id="regionPill">Region</span>
+        <span class="status-pill" id="businessName">Schreinerei Horst</span>
+        <span class="status-pill" id="regionPill">Nuernberg + 30 km</span>
         <a class="status-pill" href="../">Zur Landingpage</a>
       </div>
     </div>
@@ -28,15 +29,27 @@
   <main class="main-wrap">
     <div class="container">
       <section class="hero-card">
-        <h2 id="portalTitle">Portal lädt …</h2>
-        <p id="portalText">Bitte warten.</p>
+        <div class="hero-copy">
+          <span class="demo-label">Eingerichtet fuer einen konkreten Betrieb</span>
+          <h2 id="portalTitle">Anfragen fuer Schreinerei Horst sauber vorbereiten</h2>
+        </div>
+        <p id="portalText">
+          Diese Musterseite zeigt, wie ein eigenes Anfrage-System fuer einen Schreinerbetrieb aussehen kann: Anfrage eintragen, Betriebsschwerpunkte beruecksichtigen, Antwortvorschlag, Rueckfragen und Angebotsbasis erhalten.<br /><br />
+          Bitte keine echten Kundendaten eingeben. Die Inhalte sind Mustertexte fuer eine Schreinerei.
+        </p>
+        <div class="demo-flow" aria-label="Was dieses Kundenportal zeigt">
+          <span>Anfrage erfassen</span>
+          <span>Betrieb beruecksichtigen</span>
+          <span>Rueckfragen klaeren</span>
+          <span>Angebot vorbereiten</span>
+        </div>
       </section>
 
       <div class="layout-grid">
         <section class="panel">
           <div class="panel-head">
             <h3>Anfrage eingeben</h3>
-            <p id="privacyHint">Bitte keine sensiblen Daten eingeben.</p>
+            <p id="privacyHint">Bitte in diesem Muster keine sensiblen oder echten Kundendaten eingeben.</p>
           </div>
           <div class="panel-body">
             <form id="portalForm">
@@ -63,36 +76,26 @@
                 <div class="field">
                   <div class="label-row"><label for="tone">Ton</label></div>
                   <select id="tone">
-                    <option>Freundlich & professionell</option>
-                    <option>Etwas persönlicher</option>
-                    <option>Kurz & sachlich</option>
+                    <option>Ruhig, verbindlich und freundlich</option>
+                    <option>Kurz und sachlich</option>
+                    <option>Etwas persoenlicher</option>
                   </select>
                 </div>
               </div>
 
               <div class="field">
-                <div class="label-row"><label for="outputGoal">Ziel des Outputs</label></div>
-                <select id="outputGoal">
-                  <option>Antwort + Rückfragen + Angebotsbasis</option>
-                  <option>Nur Antwort</option>
-                  <option>Nur Rückfragen</option>
-                  <option>Nur interne Angebotsbasis</option>
-                </select>
-              </div>
-
-              <div class="field">
                 <div class="label-row"><label for="customerInquiry">Kundenanfrage</label></div>
-                <textarea id="customerInquiry" required placeholder="Hier die Anfrage einfügen …"></textarea>
+                <textarea id="customerInquiry" required placeholder="Hier eine Kundenanfrage einfuegen ..."></textarea>
               </div>
 
               <div class="grid-2">
                 <div class="field">
                   <div class="label-row"><label for="projectLocation">Projektort</label></div>
-                  <input id="projectLocation" type="text" placeholder="z. B. Nürnberg, Fürth, Erlangen" />
+                  <input id="projectLocation" type="text" placeholder="z. B. Nuernberg, Fuerth, Erlangen" />
                 </div>
                 <div class="field">
                   <div class="label-row"><label for="desiredTimeline">Terminwunsch</label></div>
-                  <input id="desiredTimeline" type="text" placeholder="z. B. möglichst im Mai" />
+                  <input id="desiredTimeline" type="text" placeholder="z. B. moeglichst im Mai" />
                 </div>
               </div>
 
@@ -107,13 +110,13 @@
                 </div>
                 <div class="field">
                   <div class="label-row"><label for="internalNote">Interner Hinweis</label></div>
-                  <input id="internalNote" type="text" placeholder="optional für Büro oder Inhaber" />
+                  <input id="internalNote" type="text" placeholder="optional fuer Buero oder Inhaber" />
                 </div>
               </div>
 
               <div class="actions">
-                <button id="submitBtn" class="btn btn-primary" type="submit">Antwort erstellen</button>
-                <button id="exampleBtn" class="btn btn-secondary" type="button">Beispiel laden</button>
+                <button id="submitBtn" class="btn btn-primary" type="submit">Antwort vorbereiten</button>
+                <button id="exampleBtn" class="btn btn-secondary" type="button">Musteranfrage laden</button>
                 <button id="resetBtn" class="btn btn-ghost" type="button">Eingabe leeren</button>
               </div>
             </form>
@@ -122,8 +125,8 @@
 
         <aside class="panel">
           <div class="panel-head">
-            <h3 id="knowledgeTitle">Betriebswissen</h3>
-            <p>Sichtbare, unkritische Portal-Daten für diese Phase.</p>
+            <h3 id="knowledgeTitle">Betriebsangaben</h3>
+            <p>Diese Seite ist auf typische Leistungen, Arbeitsweise und Rueckfragen von Schreinerei Horst zugeschnitten.</p>
           </div>
           <div class="panel-body">
             <div class="info-list">
@@ -144,7 +147,7 @@
                 <ul id="noGosList"></ul>
               </div>
               <div class="info-block">
-                <h4>Qualifizierung</h4>
+                <h4>Erste Rueckfragen</h4>
                 <ul id="qualificationList"></ul>
               </div>
             </div>
@@ -155,8 +158,8 @@
       <section id="loadingCard" class="output-card hidden">
         <div class="output-top">
           <div>
-            <h3>Antwort wird erstellt …</h3>
-            <p>Die Anfrage wird gerade mit dem Betriebswissen kombiniert und verarbeitet.</p>
+            <h3>Antwort wird vorbereitet ...</h3>
+            <p>Die Anfrage wird gelesen und passend fuer Schreinerei Horst aufbereitet.</p>
           </div>
         </div>
         <div class="output-body">
@@ -171,8 +174,8 @@
       <section id="resultCard" class="output-card hidden">
         <div class="output-top">
           <div>
-            <h3 id="outputTitle">System-Ausgabe</h3>
-            <p>Hier erscheint die echte Antwortgenerierung aus deinem Portal-Backend.</p>
+            <h3 id="outputTitle">Vorbereitete Anfrage</h3>
+            <p>Die Ausgabe ist so aufgebaut, dass der Betrieb sie pruefen, kopieren und im Alltag weiterverwenden kann.</p>
           </div>
           <div class="output-actions">
             <button id="copyReplyBtn" class="btn btn-primary" type="button">Antwort kopieren</button>
@@ -190,7 +193,7 @@
 
           <div class="result-block">
             <div class="result-head">
-              <h4>Sinnvolle Rückfragen</h4>
+              <h4>Sinnvolle Rueckfragen</h4>
               <button id="copyQuestionsBtn" class="mini-copy" type="button">Kopieren</button>
             </div>
             <ul id="followUpQuestionsOutput" class="result-list"></ul>
@@ -198,7 +201,7 @@
 
           <div class="result-block">
             <div class="result-head">
-              <h4>Interne Angebotsbasis</h4>
+              <h4>Angebotsbasis</h4>
               <button id="copyQuoteBtn" class="mini-copy" type="button">Kopieren</button>
             </div>
             <ul id="quoteBaseOutput" class="result-list"></ul>
@@ -206,25 +209,24 @@
 
           <div class="result-block">
             <div class="result-head">
-              <h4>Nächster Schritt</h4>
+              <h4>Naechster Schritt</h4>
             </div>
             <div id="nextStepOutput" class="result-content"></div>
           </div>
 
           <div class="meta-grid">
-            <div class="meta-card"><strong>Anfragetyp</strong><p id="metaType">–</p></div>
-            <div class="meta-card"><strong>Output-Ziel</strong><p id="metaGoal">–</p></div>
-            <div class="meta-card"><strong>Kontext</strong><p id="metaContext">–</p></div>
+            <div class="meta-card"><strong>Anfragetyp</strong><p id="metaType">-</p></div>
+            <div class="meta-card"><strong>Kontext</strong><p id="metaContext">-</p></div>
           </div>
-          <div class="footer-mini">Phase 1.5: GitHub Pages vorne, echte Generierung über einen kleinen Backend-Layer.</div>
+          <div class="footer-mini">Muster-Kundenportal fuer Schreinerei Horst. Keine echten Kundendaten verwenden.</div>
         </div>
       </section>
 
       <section id="errorCard" class="output-card hidden error-card">
         <div class="output-top">
           <div>
-            <h3>Generierung fehlgeschlagen</h3>
-            <p id="errorMessage">Bitte Worker-Konfiguration und API-Verbindung prüfen.</p>
+            <h3>Antwort konnte nicht vorbereitet werden</h3>
+            <p id="errorMessage">Bitte versuchen Sie es gleich noch einmal oder laden Sie die Musteranfrage neu.</p>
           </div>
         </div>
       </section>
