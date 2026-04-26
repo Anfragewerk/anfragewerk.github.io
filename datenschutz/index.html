@@ -3,16 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Datenschutz – Handwerks-Assistent</title>
-  <link rel="stylesheet" href="/assets/css/main.css" />
+  <title>Datenschutz - AnfrageWerk</title>
+  <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="../">AnfrageWerk</a>
+      <nav class="nav-links" aria-label="Rechtliches">
+        <a href="../">Startseite</a>
+        <a href="../impressum/">Impressum</a>
+      </nav>
+    </div>
+  </header>
+
   <main class="section">
     <div class="container feature-card">
-      <h1 style="font-size:2rem;max-width:none;">Datenschutz</h1>
-      <p>Platzhalter für deine spätere Datenschutzerklärung. Für die erste interne Demo reicht eine einfache Seite, live solltest du das sauber ausformulieren.</p>
-      <p><a class="btn btn-secondary" href="/">Zurück</a></p>
+      <span class="eyebrow">Datenschutz</span>
+      <h1 style="font-size:2rem;max-width:none;">Datenschutzerklaerung</h1>
+      <p>Diese Datenschutzerklaerung informiert gemaess Art. 13 DSGVO ueber die Verarbeitung personenbezogener Daten im Zusammenhang mit AnfrageWerk.</p>
+
+      <h2 style="font-size:1.35rem;max-width:none;margin-top:28px;">1. Verantwortlicher</h2>
+      <p>
+        Patrick Guttenberger<br />
+        AnfrageWerk<br />
+        Penzendorfer Str. 21<br />
+        91126 Schwabach<br />
+        Deutschland<br />
+        E-Mail: <a href="mailto:anfragewerk@web.de">anfragewerk@web.de</a>
+      </p>
+
+      <h2 style="font-size:1.35rem;max-width:none;margin-top:28px;">2. Bereitstellung der Website ueber GitHub Pages</h2>
+      <p>
+        Diese Website wird ueber GitHub Pages bereitgestellt. Beim Aufruf der Website koennen durch GitHub bzw. den technischen Betrieb serverseitige Protokolldaten verarbeitet werden. Dazu koennen insbesondere IP-Adresse, Datum und Uhrzeit des Abrufs, aufgerufene Dateien, uebertragene Datenmenge sowie technische Informationen zu Browser und Betriebssystem gehoeren.
+      </p>
+      <p>
+        Die Verarbeitung erfolgt zur technischen Bereitstellung der Website sowie zur Gewaehrleistung von Sicherheit und Stabilitaet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.
+      </p>
+
+      <h2 style="font-size:1.35rem;max-width:none;margin-top:28px;">3. Demo-Generierung ueber Cloudflare Worker und OpenAI</h2>
+      <p>
+        In den Demo-Bereichen von AnfrageWerk koennen Nutzer eine Anfrage eingeben, um beispielhaft eine Antwort, Rueckfragen und eine Angebotsbasis vorzubereiten. Die technische Uebermittlung erfolgt ueber einen Cloudflare Worker als Schnittstelle. Zur Verarbeitung der eingegebenen Anfrage kann OpenAI eingesetzt werden.
+      </p>
+      <p>
+        Bitte geben Sie in der Demo keine sensiblen Daten und keine echten Kundendaten ein. Die Demo dient der Veranschaulichung der Arbeitsweise von AnfrageWerk.
+      </p>
+      <p>
+        AnfrageWerk speichert Demo-Eingaben nicht dauerhaft, sofern dies technisch nicht anders implementiert ist. Eine kurzfristige Verarbeitung kann fuer die Bearbeitung der Anfrage, technische Uebermittlung, Sicherheit und Fehleranalyse erforderlich sein.
+      </p>
+      <p>
+        Rechtsgrundlage fuer die technische Bereitstellung, Sicherheit und Stabilitaet ist Art. 6 Abs. 1 lit. f DSGVO. Rechtsgrundlage fuer die Bearbeitung von Demo-Anfragen und die Verbesserung der Anfragebearbeitung ist Art. 6 Abs. 1 lit. f DSGVO, soweit keine Einwilligung erforderlich ist.
+      </p>
+
+      <h2 style="font-size:1.35rem;max-width:none;margin-top:28px;">4. Kontaktaufnahme per E-Mail</h2>
+      <p>
+        Wenn Sie AnfrageWerk per E-Mail kontaktieren, werden die von Ihnen uebermittelten Daten verarbeitet, um Ihre Anfrage zu beantworten und die Kommunikation zu fuehren. Dazu gehoeren insbesondere Ihre E-Mail-Adresse, der Inhalt Ihrer Nachricht und gegebenenfalls weitere freiwillig uebermittelte Angaben.
+      </p>
+      <p>
+        Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit die Kommunikation vorvertragliche oder vertragliche Zwecke betrifft. In anderen Faellen kann die Verarbeitung auf Art. 6 Abs. 1 lit. f DSGVO beruhen.
+      </p>
+
+      <h2 style="font-size:1.35rem;max-width:none;margin-top:28px;">5. Server- und Protokolldaten</h2>
+      <p>
+        Hosting- und Infrastruktur-Anbieter koennen Server- und Protokolldaten verarbeiten, um den sicheren und stabilen Betrieb der Website und der Demo-Funktionen zu ermoeglichen. Dazu koennen technische Zugriffsdaten, Fehlermeldungen und Sicherheitsereignisse gehoeren.
+      </p>
+      <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+      <h2 style="font-size:1.35rem;max-width:none;margin-top:28px;">6. Drittanbieter</h2>
+      <p>
+        Fuer AnfrageWerk koennen insbesondere folgende Drittanbieter bzw. Infrastruktur-Dienste eingebunden sein:
+      </p>
+      <ul>
+        <li>GitHub Pages fuer die Bereitstellung der Website</li>
+        <li>Cloudflare fuer die technische Schnittstelle der Demo-Funktion</li>
+        <li>OpenAI fuer die Verarbeitung eingegebener Demo-Anfragen zur Antwortgenerierung</li>
+      </ul>
+
+      <h2 style="font-size:1.35rem;max-width:none;margin-top:28px;">7. Keine Tracking- und Marketing-Technologien</h2>
+      <p>
+        AnfrageWerk verwendet kein Analytics, kein Meta-Pixel, kein Amazon Attribution, kein Google Forms, kein Offline-Partner-Tracking, keine externen Webfonts und keine eingebetteten Videos.
+      </p>
+      <p>
+        Es wird kein Cookie-Banner eingesetzt, solange keine optionalen Cookies oder vergleichbaren Tracking-Technologien verwendet werden, die eine Einwilligung erfordern.
+      </p>
+
+      <h2 style="font-size:1.35rem;max-width:none;margin-top:28px;">8. Speicherdauer</h2>
+      <p>
+        Personenbezogene Daten werden nur so lange verarbeitet, wie dies fuer die jeweiligen Zwecke erforderlich ist. Gesetzliche Aufbewahrungspflichten bleiben unberuehrt. E-Mail-Kommunikation kann im Rahmen gesetzlicher Fristen oder berechtigter Dokumentationsinteressen aufbewahrt werden.
+      </p>
+
+      <h2 style="font-size:1.35rem;max-width:none;margin-top:28px;">9. Ihre Rechte</h2>
+      <p>Ihnen stehen nach Massgabe der gesetzlichen Vorschriften insbesondere folgende Rechte zu:</p>
+      <ul>
+        <li>Recht auf Auskunft ueber die zu Ihrer Person verarbeiteten Daten</li>
+        <li>Recht auf Berichtigung unrichtiger Daten</li>
+        <li>Recht auf Loeschung</li>
+        <li>Recht auf Einschraenkung der Verarbeitung</li>
+        <li>Recht auf Widerspruch gegen die Verarbeitung, soweit die gesetzlichen Voraussetzungen vorliegen</li>
+        <li>Recht auf Datenuebertragbarkeit, soweit anwendbar</li>
+        <li>Recht, eine erteilte Einwilligung jederzeit mit Wirkung fuer die Zukunft zu widerrufen</li>
+      </ul>
+
+      <h2 style="font-size:1.35rem;max-width:none;margin-top:28px;">10. Beschwerderecht</h2>
+      <p>
+        Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehoerde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen Datenschutzrecht verstoesst.
+      </p>
+
+      <h2 style="font-size:1.35rem;max-width:none;margin-top:28px;">11. Kontakt zum Datenschutz</h2>
+      <p>Bei Fragen zum Datenschutz schreiben Sie bitte an: <a href="mailto:anfragewerk@web.de">anfragewerk@web.de</a></p>
+
+      <p>Stand: April 2026</p>
+      <p><a class="btn btn-secondary" href="../">Zurueck zur Startseite</a></p>
     </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© AnfrageWerk</span>
+      <div class="footer-links">
+        <a href="../impressum/">Impressum</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
