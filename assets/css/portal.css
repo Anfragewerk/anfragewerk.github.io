@@ -57,10 +57,14 @@ a { color: inherit; text-decoration: none; }
   place-items: center;
   flex: 0 0 auto;
   border-radius: var(--radius);
-  color: #fff;
-  background: var(--primary);
-  font-weight: 850;
-  box-shadow: inset 0 -3px 0 rgba(0,0,0,0.1);
+  background: transparent;
+}
+
+.logo-badge img {
+  display: block;
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
 }
 
 .demo-label {
@@ -328,6 +332,8 @@ textarea { min-height: 230px; resize: vertical; }
 @media (max-width: 640px) {
   .container { width: min(calc(100% - 24px), var(--max)); }
   .main-wrap { padding: 22px 0 42px; }
+  .logo-badge,
+  .logo-badge img { width: 40px; height: 40px; }
   .hero-card, .panel-head, .panel-body, .output-top, .output-body { padding-left: 18px; padding-right: 18px; }
   .hero-card h2 { max-width: 100%; font-size: clamp(2rem, 10vw, 3rem); }
   .demo-flow { grid-template-columns: 1fr; }

@@ -29,7 +29,7 @@ function renderHeader() {
   $('portalText').textContent = state.uiText.heroText;
 
   const logoBadge = document.querySelector('.logo-badge');
-  if (logoBadge) {
+  if (logoBadge && !logoBadge.querySelector('img')) {
     logoBadge.textContent = (state.config.systemName || 'AW').slice(0, 2).toUpperCase();
   }
 
