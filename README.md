@@ -1,4 +1,6 @@
-# AnfrageWerk – Phase 1.5
+# Handwerk-AnfrageWerk
+
+KI-gestützte Anfrage- & Angebotsvorbereitung für Handwerksbetriebe
 
 Moderne Landingpage auf GitHub Pages + echte Antwortgenerierung über einen kleinen Backend-Layer.
 

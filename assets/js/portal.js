@@ -20,7 +20,7 @@ function getSlugFromPath() {
 }
 
 function renderHeader() {
-  document.title = `${state.config.systemName} – AnfrageWerk`;
+  document.title = `${state.config.systemName} – Handwerk-AnfrageWerk`;
   $('systemName').textContent = state.config.systemName;
   $('businessName').textContent = state.config.businessName;
   $('tagline').textContent = state.config.tagline;
